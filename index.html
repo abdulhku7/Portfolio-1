@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <!-- Initial Navigation Overlay -->
+    <div class="initial-nav-overlay" id="initialNav">
+        <div class="nav-sections">
+            <div class="nav-section" data-section="home">
+                <h2>Home</h2>
+                <p>Welcome to my portfolio</p>
+            </div>
+            <div class="nav-section" data-section="about">
+                <h2>About</h2>
+                <p>Learn more about me</p>
+            </div>
+            <div class="nav-section" data-section="projects">
+                <h2>Projects</h2>
+                <p>View my work</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+        <div class="text-2xl">LOGO</div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <ul class="nav-links">
+            <li><button class="nav-button active" data-section="home">Home</button></li>
+            <li><button class="nav-button" data-section="about">About</button></li>
+            <li><button class="nav-button" data-section="projects">Projects</button></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Trying to be Better</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="content">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <!-- Your existing about content -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="content">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Your existing project content -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="contactPopup">
+        <div class="popup-container">
+            <button class="popup-close" id="closePopup">×</button>
+            <h2 class="popup-title">Get in Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label class="form-label" for="name">Name</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea id="message" class="form-input form-textarea" required></textarea>
+                </div>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
